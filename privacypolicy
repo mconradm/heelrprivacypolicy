@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<!--
+  TODO before publishing — fill in / confirm every bracketed [ ] placeholder:
+  1. [Legal entity name] and [ABN] — the entity that operates Heelr.
+  2. Gait scan processing: confirm whether it runs on-device, off-device, or both (Section: Camera and Video / AI and Automated Analysis).
+  3. [Cloud storage / processing provider] and the [country] it operates in.
+  4. [Third-party AI provider(s)] and [country] — name them; Apple requires this if you send personal data to a third-party AI service.
+  5. Retention windows: [account retention period], [improvement-corpus retention period], [removal period after withdrawal].
+  6. Confirm the Settings toggle is named exactly "Share my videos to improve Heelr" and is off by default, so the policy matches the app.
+  This draft reflects the Australian Privacy Act 1988 (Cth) / APPs but is not legal advice — have it reviewed before relying on it.
+-->
 <html lang="en-AU">
 <head>
   <meta charset="UTF-8" />
@@ -24,7 +34,7 @@
 </head>
 <body>
   <h1>Heelr Privacy Policy</h1>
-  <p class="meta"><strong>Last updated:</strong> 30 May 2026</p>
+  <p class="meta"><strong>Last updated:</strong> 4 June 2026</p>
 
   <p>
     Heelr respects your privacy. This Privacy Policy explains how information is handled when you use the
@@ -34,6 +44,13 @@
   <p>
     Heelr is designed for general consumers who want to log, track, and review their dog&rsquo;s daily activity,
     recovery, and movement over time.
+  </p>
+
+  <p>
+    Heelr is operated by [Legal entity name] ([ABN]). We handle personal information in accordance with the
+    Australian <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs). Although Heelr is about
+    your dog, the videos you record and the details tied to your account can identify you, so we treat them as your
+    personal information.
   </p>
 
   <hr />
@@ -54,8 +71,9 @@
   <h3>Camera and Video (Gait Scans)</h3>
   <ul>
     <li>The app allows you to record video using your device camera, or select an existing video, to perform a gait scan and analyse how your dog moves.</li>
-    <li>Gait scan video may be processed on your device and/or transmitted to our service providers to generate movement analysis and results.</li>
-    <li>By default, your gait scan videos and their results are <strong>saved to your Heelr library</strong> so you can replay scans and compare movement over time. You can delete a scan or its video at any time from within the app.</li>
+    <li>To generate your results, your gait scan video is [processed on your device and/or securely transmitted to our processing providers], solely to produce your movement analysis.</li>
+    <li>By default, your gait scan videos and their results are <strong>saved to your Heelr library</strong> so you can replay scans and compare movement over time. This is for your own use. You can delete a scan or its video at any time from within the app.</li>
+    <li>Separately, we only use your gait scan videos to <strong>improve Heelr&rsquo;s accuracy across different dogs</strong> if you choose to turn this on. This is optional and off by default &mdash; see &ldquo;Improving Heelr&rdquo; below.</li>
   </ul>
 
   <h3>Photos</h3>
@@ -73,20 +91,22 @@
   <h3>Location Information</h3>
   <ul>
     <li>If you use activity or walk-tracking features, the app may request access to your device location to record distance or routes at the time you use the feature.</li>
-    <li>Location is used to provide that feature and is associated with the relevant journal entry if you choose to save it.</li>
+    <li>Location is used to provide that feature and is associated with the relevant journal entry only if you choose to save it.</li>
+    <li>We do not collect location in the background or use it for advertising. Where a video file contains embedded location metadata, we [remove it on upload / retain it only as part of the entry you save] &mdash; confirm which applies to your build.</li>
   </ul>
 
   <h3>Account and Identifiers</h3>
   <ul>
     <li>The app may create an <strong>identifier</strong> to support core functionality such as saving your content, syncing across your devices, managing entitlements, and associating your data with your session.</li>
     <li>If account sign-in is offered, we collect the information needed to create and secure your account.</li>
+    <li>Under Australian privacy law, identifiers like these can be personal information, so we handle them accordingly and do not use them to track you across other apps or websites.</li>
   </ul>
 
   <h3>Usage and Diagnostics Data</h3>
   <ul>
-    <li>The app may collect <strong>anonymous usage events</strong>, such as feature interactions, to support app functionality and basic analytics.</li>
+    <li>The app may collect usage events, such as feature interactions, to support app functionality and basic analytics.</li>
     <li>The app may collect crash reports and performance diagnostics through Apple&rsquo;s built-in tools.</li>
-    <li>This information does not identify you personally.</li>
+    <li>We do not use this information to build an advertising profile of you or to track you across other apps or websites.</li>
   </ul>
 
   <h3>Information We Do Not Collect</h3>
@@ -103,34 +123,64 @@
   <p>Information handled by the app is used only to:</p>
   <ul>
     <li>Provide core features such as journaling, recovery and mobility tracking, and gait scans</li>
-    <li>Generate gait and movement analysis and track changes over time</li>
+    <li>Generate your gait and movement analysis and let you track changes over time</li>
     <li>Save, sync, and back up your content so it is available to you</li>
     <li>Display and manage subscription access</li>
     <li>Improve app stability and performance</li>
-    <li>Understand general feature usage in an anonymous way</li>
+    <li>Understand general feature usage</li>
+    <li><strong>If you opt in</strong>, improve the accuracy of Heelr&rsquo;s gait analysis across different dogs (see &ldquo;Improving Heelr&rdquo;)</li>
   </ul>
 
   <p><strong>We do not sell your personal information to advertisers or any third parties, and we do not share your information with advertisers.</strong> We do not use your data for advertising, marketing, or tracking across apps or websites.</p>
 
   <hr />
 
+  <h2>Improving Heelr (Optional)</h2>
+  <p>
+    Heelr&rsquo;s gait analysis becomes more accurate the more movement it can learn from across different breeds,
+    ages, sizes, and recovery stages. We only use your gait scan videos for this if you choose to turn it on.
+  </p>
+  <ul>
+    <li>This is controlled by the setting <strong>&ldquo;Share my videos to improve Heelr&rdquo;</strong>, which is <strong>off by default</strong>. You can find and change it in Settings at any time.</li>
+    <li>If you turn it on, we may keep your gait scan videos and results for this purpose, and re-analyse them later to check that improvements to our analysis are working and to compare results across dogs.</li>
+    <li>We use them solely to improve Heelr. We never sell them, use them for advertising, or use them to identify you.</li>
+    <li>You can withdraw at any time by switching the setting off or by deleting your shared videos. When you do, we remove your videos from our improvement and validation datasets within [removal period].</li>
+    <li>We retain videos used for this purpose for up to [improvement-corpus retention period], after which they are deleted or de-identified. We do not keep them indefinitely.</li>
+  </ul>
+  <p>
+    Heelr works fully without turning this on &mdash; declining does not limit any feature.
+  </p>
+
+  <hr />
+
   <h2>Data Storage, Sync, and Retention</h2>
   <ul>
-    <li>Your journal content, dog profiles, photos, videos, and gait scan results are retained so that the features work and your history is available to you.</li>
+    <li>Your journal content, dog profiles, photos, videos, and gait scan results are retained so that the features work and your history is available to you, until you delete them.</li>
     <li>Where sync or backup is enabled, your content may be stored on our service providers&rsquo; infrastructure to make it available across your devices.</li>
     <li>You can delete individual entries, photos, videos, or scans at any time from within the app.</li>
     <li>Location data is used at the time of the request and retained only if you save it to an entry.</li>
-    <li>Anonymous usage and diagnostic data may be retained in aggregated form to support app operation and improvements.</li>
-    <li>If you delete your account (where accounts are offered), your associated content is deleted, subject to any limited retention required for legal or operational reasons.</li>
+    <li>Videos used to improve Heelr (where you have opted in) are retained as described in &ldquo;Improving Heelr&rdquo; above.</li>
+    <li>Usage and diagnostic data may be retained in aggregated or de-identified form to support app operation and improvements.</li>
+    <li>If you delete your account (where accounts are offered), your associated content is deleted within [account retention period], subject to any limited retention required for legal or operational reasons.</li>
   </ul>
+
+  <hr />
+
+  <h2>Overseas Disclosure</h2>
+  <p>
+    Some of the service providers we rely on are located outside Australia, in [list countries, e.g. the United
+    States]. Where we disclose your personal information to an overseas recipient, we take reasonable steps to
+    ensure they handle it consistently with the Australian Privacy Principles, including through contractual
+    protections.
+  </p>
 
   <hr />
 
   <h2>AI and Automated Analysis</h2>
   <ul>
-    <li>Gait scans and certain insights may be generated using automated analysis and/or AI service providers.</li>
-    <li>Where processing occurs off-device, the relevant content (such as gait scan video or movement data) may be transmitted to these providers solely to generate your results.</li>
-    <li>We use these providers only to deliver app features, not for advertising or cross-app tracking.</li>
+    <li>Gait scans and certain insights may be generated using automated analysis and/or third-party AI providers, specifically [name the provider(s), e.g. the analysis service you use].</li>
+    <li>Where processing occurs off-device, only the content needed to generate your results (such as your gait scan video or movement data) is transmitted, and solely to produce those results.</li>
+    <li>Before your personal data is sent to a third-party AI service, we ask for your permission. These providers are required to protect your data and may not use it for their own purposes, advertising, or cross-app tracking.</li>
   </ul>
 
   <hr />
@@ -146,7 +196,7 @@
 
   <h3>Cloud Storage and Processing</h3>
   <ul>
-    <li>We use cloud infrastructure and processing providers to store your content (where sync or backup is enabled) and to generate gait scan results.</li>
+    <li>We use [cloud storage / processing provider], located in [country], to store your content (where sync or backup is enabled) and to generate gait scan results.</li>
     <li>These providers handle data only to operate the app and do not use it for advertising.</li>
   </ul>
 
@@ -164,24 +214,39 @@
 
   <hr />
 
+  <h2>Security</h2>
+  <p>
+    We take reasonable steps to protect your information from misuse, loss, and unauthorised access, including
+    [encryption in transit and at rest, access controls, and limited internal access]. No system is perfectly secure,
+    so we encourage you to use a strong password and keep your device secure. If a data breach occurs that is likely to
+    result in serious harm, we will notify affected users and the Office of the Australian Information Commissioner
+    (OAIC) as required under the Notifiable Data Breaches scheme.
+  </p>
+
+  <hr />
+
   <h2>Your Privacy Rights</h2>
   <p>You control access to device features such as the camera, photo library, and location through iOS system settings.</p>
   <p>You can:</p>
   <ul>
     <li>Deny or revoke camera, photo library, or location permissions at any time</li>
     <li>View, edit, and delete your journal content, photos, videos, dog profiles, and gait scans within the app</li>
-    <li>Request access to or deletion of your data, and (where accounts are offered) delete your account</li>
+    <li>Turn video sharing for improving Heelr on or off, and delete your shared videos, at any time in Settings</li>
+    <li>Request access to, or correction of, the personal information we hold about you</li>
+    <li>Request deletion of your data, and (where accounts are offered) delete your account</li>
+    <li>Withdraw any consent you have given, at any time</li>
     <li>Manage or cancel subscriptions through your Apple ID settings</li>
   </ul>
 
   <p>
-    To make a privacy request, contact us using the details below.
+    To make a privacy request, contact us using the details below. We will respond within a reasonable period and as
+    required by law.
   </p>
 
   <hr />
 
   <h2>Children&rsquo;s Privacy</h2>
-  <p>Heelr is not directed to children under the age of 13.</p>
+  <p>Heelr is not directed to or intended for children.</p>
   <p>
     The app does not knowingly collect personal information from children. If you believe a child has provided
     information through the app, please contact us so we can address the issue.
@@ -192,7 +257,8 @@
   <h2>Changes to This Policy</h2>
   <p>
     This Privacy Policy may be updated from time to time to reflect changes in the app or legal requirements. Any
-    updates will be posted on this page with a revised &ldquo;Last updated&rdquo; date.
+    updates will be posted on this page with a revised &ldquo;Last updated&rdquo; date. Where a change introduces a new
+    use of personal information you have already provided, we will seek fresh consent where required.
   </p>
 
   <hr />
@@ -202,5 +268,9 @@
     If you have questions or concerns about this Privacy Policy or how Heelr handles privacy, you can contact us at:
   </p>
   <p><a href="mailto:contact@heelr.app">contact@heelr.app</a></p>
+  <p>
+    If you are not satisfied with our response, you can lodge a complaint with the Office of the Australian Information
+    Commissioner (OAIC) at <a href="https://www.oaic.gov.au">oaic.gov.au</a>.
+  </p>
 </body>
 </html>
